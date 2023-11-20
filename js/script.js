@@ -6,7 +6,7 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando un'altra funzion
 Dichiariamo chi ha vinto.*/
 
 
-let userNumber = prompt('scegli un numero da 1 a 5')
+let userNumber = parseInt(prompt('scegli un numero da 1 a 5'))
 
 console.log(userNumber)
 
@@ -16,7 +16,8 @@ function randomNumber (minNumber, maxNamber){
 }
 console.log(randomNumber (1, 5))
 
-const aiNumber = randomNumber
+const aiNumber = randomNumber(1, 5)
+
 
 const somma = userNumber + aiNumber
 console.log(somma)
@@ -29,10 +30,10 @@ function oddOrEven (number){
         return 'dispari'
     }
 }
-const variabile = oddOrEven(userNumber);
+const variabile = oddOrEven(somma);
 console.log(variabile)
 
-if ( % 2 === 0){
+if (aiNumber % 2  === 0 ){
     console.log('ha vinto il bot')
 } else {
     console.log(' ha vinto la persona')
@@ -42,9 +43,9 @@ if ( % 2 === 0){
 /*Palidroma:
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
-E' vietato usare split(), reverse() e simili.*/
+E' vietato usare split(), reverse() e simili.
 
 
-const parolaUtente = prompt('inserisci una parola')
+const parolaUtente = prompt('inserisci una parola')*/
 
 
