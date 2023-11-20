@@ -14,9 +14,11 @@ function randomNumber (minNumber, maxNamber){
     return Math.floor(Math.random () * (maxNamber - minNumber + 1) + minNumber)
     
 }
-console.log(randomNumber (1, 5))
 
-const aiNumber = randomNumber(1, 5)
+
+
+let aiNumber = randomNumber(1, 5)
+console.log(randomNumber (1, 5))
 
 
 const somma = userNumber + aiNumber
@@ -33,19 +35,11 @@ function oddOrEven (number){
 const variabile = oddOrEven(somma);
 console.log(variabile)
 
-if (aiNumber % 2  === 0 ){
+if (somma % 2  === 0 ){
     console.log('ha vinto il bot')
 } else {
     console.log(' ha vinto la persona')
 }
 
-
-/*Palidroma:
-Chiedere all’utente di inserire una parola
-Creare una funzione per capire se la parola inserita è palindroma
-E' vietato usare split(), reverse() e simili.
-
-
-const parolaUtente = prompt('inserisci una parola')*/
 
 
